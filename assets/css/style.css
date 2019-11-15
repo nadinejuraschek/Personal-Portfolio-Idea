@@ -19,11 +19,11 @@ NAVIGATION
 .nav-background {
   background-image: radial-gradient(#f0fbff, #c9f0ff);
   border-radius: 50%;
-  height: 6rem;
+  height: 4rem;
   position: fixed;
-  right: 4.5rem;
-  top: 4.5rem;
-  width: 6rem;
+  right: 3.5rem;
+  top: 3.5rem;
+  width: 4rem;
   z-index: 100;
 
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -45,12 +45,15 @@ NAVIGATION
   background-color: #ffffff;
   border-radius: 50%;
   box-shadow: 0 1rem 3rem #00000010;
-  height: 7rem;
+  height: 5.5rem;
   position: fixed;
-  right: 4rem;
-  top: 4rem;
-  width: 7rem;
+  right: 3rem;
+  text-align: center;
+  top: 3rem;
+  width: 5.5rem;
   z-index: 300;
+
+  cursor: pointer;
 }
 .navigation-nav {
   height: 100vh;
@@ -78,6 +81,8 @@ NAVIGATION
 .nav-item {
   margin: 1rem;
 }
+
+/** FUNCTIONALITY **/
 .nav-link:link,
 .nav-link:visited {
   background-image: linear-gradient(
@@ -100,6 +105,48 @@ NAVIGATION
 .nav-link:active {
   background-position: 100%;
   transform: translate(1rem);
+}
+
+/** ICON **/
+.nav-icon {
+  background-color: #333333;
+  display: inline-block;
+  height: 1.5px;
+  position: relative;
+  margin-top: 2.75rem;
+  width: 2rem;
+}
+.nav-icon::before,
+.nav-icon::after {
+  background-color: #333333;
+  content: "";
+  display: inline-block;
+  height: 1.5px;
+  left: 0;
+  position: absolute;
+  transition: all 0.2s;
+  width: 2rem;
+}
+.nav-icon::before {
+  top: -0.5rem;
+}
+.nav-icon::after {
+  top: 0.5rem;
+}
+.nav-btn:hover {
+  top: 2.9rem;
+  right: 3.1rem;
+}
+.nav-checkbox:checked + .nav-btn .nav-icon {
+  background-color: transparent;
+}
+.nav-checkbox:checked + .nav-btn .nav-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.nav-checkbox:checked + .nav-btn .nav-icon::after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 /********************************
