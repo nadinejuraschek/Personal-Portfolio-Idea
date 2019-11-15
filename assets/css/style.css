@@ -142,11 +142,11 @@ NAVIGATION
 }
 .nav-checkbox:checked + .nav-btn .nav-icon::before {
   top: 0;
-  transform: rotate(45deg);
+  transform: rotate(135deg);
 }
 .nav-checkbox:checked + .nav-btn .nav-icon::after {
   top: 0;
-  transform: rotate(-45deg);
+  transform: rotate(-135deg);
 }
 
 /********************************
