@@ -5,16 +5,65 @@ COLORS
 #254E70
 #002642
 #F46036
+#333333
 
 GRADIENTS
 
 FONTS
-
+Lato
 ********************************/
+body,
+a {
+  color: #333333;
+  font-family: "Lato", Helvetica, sans-serif;
+}
 
 /********************************
 NAVIGATION
 ********************************/
+/** LANGUAGES, AVAILABLE FOR HIRE **/
+.languages {
+  background-color: transparent;
+  position: fixed;
+  right: 10rem;
+  top: 4.75rem;
+}
+.language-link {
+  margin-left: 0.5rem;
+}
+.language-img {
+  height: 2rem;
+  weight: 2rem;
+}
+
+/** CONTACT **/
+.nav-contact {
+  display: inline-block;
+}
+.profile-pic {
+  border: 2px solid #f46036;
+  border-radius: 50%;
+  display: inline-block;
+  height: 30%;
+  padding: 5px;
+  width: 30%;
+}
+.nav-details {
+  display: inline-block;
+  margin: 1rem;
+}
+.nav-heading {
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.nav-text {
+  margin-bottom: 1rem;
+}
+.social-icons a {
+  margin: 0 1rem;
+}
+
 /* nav-background: round button hidden behind the menu button, expans when clicked */
 .nav-background {
   background-image: radial-gradient(#f0fbff, #c9f0ff);
@@ -70,13 +119,9 @@ NAVIGATION
   transition: all 0.8s;
 }
 .nav-list {
-  left: 50%;
+  display: inline-block;
   list-style: none;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  text-align: right;
 }
 .nav-item {
   margin: 1rem;
@@ -92,7 +137,7 @@ NAVIGATION
     #f46036 50%
   );
   background-size: 250%;
-  color: #002642;
+  color: #333333;
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
@@ -152,6 +197,15 @@ NAVIGATION
 /********************************
 HEADER
 ********************************/
+header {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
 
 /********************************
 ABOUT
@@ -164,6 +218,15 @@ SKILLS
 /********************************
 RECENT WORK
 ********************************/
+.recent-work {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
 
 /********************************
 TESTIMONIALS
@@ -172,3 +235,22 @@ TESTIMONIALS
 /********************************
 FOOTER
 ********************************/
+.footer {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
+.footer a {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.footer a:hover {
+  color: #ffffff;
+}
+.copyright {
+  font-size: 0.8rem;
+}
