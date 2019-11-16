@@ -17,19 +17,41 @@ a {
   color: #333333;
   font-family: "Lato", Helvetica, sans-serif;
 }
+header,
+.recent-work,
+.footer,
+.playground {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
 
 /********************************
 NAVIGATION
 ********************************/
-/** LANGUAGES, AVAILABLE FOR HIRE **/
-.languages {
-  background-color: transparent;
+/** LANGUAGES **/
+.language-link {
   position: fixed;
+}
+.eng {
+  right: 12.2rem;
+  top: 4.75rem;
+}
+.ger {
   right: 10rem;
   top: 4.75rem;
 }
-.language-link {
-  margin-left: 0.5rem;
+.eng:hover {
+  right: 12.3rem;
+  top: 4.65rem;
+}
+.ger:hover {
+  right: 10.1rem;
+  top: 4.65rem;
 }
 .language-img {
   height: 2rem;
@@ -197,15 +219,6 @@ NAVIGATION
 /********************************
 HEADER
 ********************************/
-header {
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #6dd5ed,
-    #2193b0
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6dd5ed, #2193b0);
-}
 
 /********************************
 ABOUT
@@ -218,15 +231,6 @@ SKILLS
 /********************************
 RECENT WORK
 ********************************/
-.recent-work {
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #6dd5ed,
-    #2193b0
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6dd5ed, #2193b0);
-}
 
 /********************************
 TESTIMONIALS
@@ -235,15 +239,6 @@ TESTIMONIALS
 /********************************
 FOOTER
 ********************************/
-.footer {
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #6dd5ed,
-    #2193b0
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6dd5ed, #2193b0);
-}
 .footer a {
   font-size: 2rem;
   margin-right: 1rem;
@@ -254,3 +249,7 @@ FOOTER
 .copyright {
   font-size: 0.8rem;
 }
+
+/********************************
+PROJECTS
+********************************/
