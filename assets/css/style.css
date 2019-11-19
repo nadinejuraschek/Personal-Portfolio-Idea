@@ -1,94 +1,94 @@
 /********************************
 COLORS
-#C9F0FF
-#4B88A2
-#254E70
+#C9F0FF #83eaf1
+#4B88A2 #68d5ff
+#254E70 #8ed8e6
 #002642
-#F46036
-#333333
-
-GRADIENTS
+#f16059 #ff827b
+#394648
 
 FONTS
 Lato
 ********************************/
 body,
 a {
-  color: #333333;
+  color: #394648;
   font-family: "Lato", Helvetica, sans-serif;
 }
-header,
-.recent-work,
-.footer,
-.playground {
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #6dd5ed,
-    #2193b0
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6dd5ed, #2193b0);
+
+.title {
+  margin: 1rem auto;
+}
+
+.subtitle {
+  padding: 3rem;
+}
+
+hr {
+  background-color: #39464840;
+  height: 1.25px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 /********************************
 NAVIGATION
 ********************************/
+.navbar {
+  background-color: #f9f9f6;
+  border-bottom: 2.5px solid #f1605950;
+  height: 5.3rem;
+}
+
+.navbar-item {
+  font-size: 1.5rem;
+}
+
+.navbar-item a:hover {
+  color: #ff827b;
+}
+
+/** LOGO **/
+.nav-logo {
+  height: 3rem;
+  margin: 0 2rem;
+  text-align: center;
+}
+
 /** LANGUAGES **/
 .language-link {
   position: fixed;
 }
+
 .eng {
   right: 12.2rem;
   top: 4.75rem;
 }
+
 .ger {
   right: 10rem;
   top: 4.75rem;
 }
+
 .eng:hover {
   right: 12.3rem;
   top: 4.65rem;
 }
+
 .ger:hover {
   right: 10.1rem;
   top: 4.65rem;
 }
+
 .language-img {
   height: 2rem;
-  weight: 2rem;
-}
-
-/** CONTACT **/
-.nav-contact {
-  display: inline-block;
-}
-.profile-pic {
-  border: 2px solid #f46036;
-  border-radius: 50%;
-  display: inline-block;
-  height: 30%;
-  padding: 5px;
-  width: 30%;
-}
-.nav-details {
-  display: inline-block;
-  margin: 1rem;
-}
-.nav-heading {
-  font-weight: 900;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-}
-.nav-text {
-  margin-bottom: 1rem;
-}
-.social-icons a {
-  margin: 0 1rem;
+  width: 2rem;
 }
 
 /* nav-background: round button hidden behind the menu button, expans when clicked */
 .nav-background {
-  background-image: radial-gradient(#f0fbff, #c9f0ff);
+  background: radial-gradient(#C9F0FF, #8ed8e6);
+  ;
   border-radius: 50%;
   height: 4rem;
   position: fixed;
@@ -99,33 +99,39 @@ NAVIGATION
 
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
+
 /* menu button is a hidden checkbox, so that state "checked" can be styled */
 .nav-checkbox {
   display: none;
 }
+
 /* makes background of menu appear */
-.nav-checkbox:checked ~ .nav-background {
+.nav-checkbox:checked~.nav-background {
   transform: scale(80);
 }
+
 /* lets menu items be visible */
-.nav-checkbox:checked ~ .navigation-nav {
+.nav-checkbox:checked~.navigation-nav {
   opacity: 1;
   width: 100%;
 }
+
 .nav-btn {
   background-color: #ffffff;
+  border: 2.5px solid #f1605950;
   border-radius: 50%;
   box-shadow: 0 1rem 3rem #00000010;
   height: 5.5rem;
   position: fixed;
   right: 3rem;
   text-align: center;
-  top: 3rem;
+  top: 2.25rem;
   width: 5.5rem;
   z-index: 300;
 
   cursor: pointer;
 }
+
 .navigation-nav {
   height: 100vh;
   position: fixed;
@@ -140,11 +146,17 @@ NAVIGATION
   /* menu animation */
   transition: all 0.8s;
 }
+
 .nav-list {
-  display: inline-block;
+  left: 50%;
   list-style: none;
-  text-align: right;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
+
 .nav-item {
   margin: 1rem;
 }
@@ -152,14 +164,12 @@ NAVIGATION
 /** FUNCTIONALITY **/
 .nav-link:link,
 .nav-link:visited {
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    #f46036 50%
-  );
+  background-image: linear-gradient(120deg,
+      transparent 0%,
+      transparent 50%,
+      #f16059 50%);
   background-size: 250%;
-  color: #333333;
+  ;
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
@@ -168,6 +178,7 @@ NAVIGATION
   text-transform: uppercase;
   transition: all 0.4s;
 }
+
 .nav-link:hover,
 .nav-link:active {
   background-position: 100%;
@@ -176,16 +187,17 @@ NAVIGATION
 
 /** ICON **/
 .nav-icon {
-  background-color: #333333;
+  background-color: #394648;
   display: inline-block;
   height: 1.5px;
   position: relative;
-  margin-top: 2.75rem;
+  margin-top: 2.65rem;
   width: 2rem;
 }
+
 .nav-icon::before,
 .nav-icon::after {
-  background-color: #333333;
+  background-color: #394648;
   content: "";
   display: inline-block;
   height: 1.5px;
@@ -194,24 +206,30 @@ NAVIGATION
   transition: all 0.2s;
   width: 2rem;
 }
+
 .nav-icon::before {
   top: -0.5rem;
 }
+
 .nav-icon::after {
   top: 0.5rem;
 }
+
 .nav-btn:hover {
-  top: 2.9rem;
+  top: 2.1rem;
   right: 3.1rem;
 }
-.nav-checkbox:checked + .nav-btn .nav-icon {
+
+.nav-checkbox:checked+.nav-btn .nav-icon {
   background-color: transparent;
 }
-.nav-checkbox:checked + .nav-btn .nav-icon::before {
+
+.nav-checkbox:checked+.nav-btn .nav-icon::before {
   top: 0;
   transform: rotate(135deg);
 }
-.nav-checkbox:checked + .nav-btn .nav-icon::after {
+
+.nav-checkbox:checked+.nav-btn .nav-icon::after {
   top: 0;
   transform: rotate(-135deg);
 }
@@ -219,37 +237,239 @@ NAVIGATION
 /********************************
 HEADER
 ********************************/
+.heading-primary {
+  line-height: 6rem;
+  margin: 4rem;
+
+  backface-visibility: hidden;
+  /* stops animation from being "shaky", hides whatever is behind the moving element */
+}
+
+.heading-primary-main {
+  display: block;
+  font-family: "Satisfy", cursive;
+  font-size: 5.4rem;
+
+  animation-name: moveInLeft;
+  /* which animation? */
+  animation-duration: 2s;
+  /* how long? */
+  animation-timing-function: ease-out;
+  /* starts fast, ends slower */
+  /*  animation-delay: --s; when should animation start? 
+      animation-iteration-count: --; how often should animation repeat? 
+      animation-timing-function: --; check MDN for keyword values!
+  */
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 2rem;
+  letter-spacing: 1.5rem;
+  text-transform: uppercase;
+
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
 
 /********************************
 ABOUT
 ********************************/
+/** CONTACT **/
+.nav-contact {
+  display: inline-block;
+}
+
+.profile-pic {
+  border: 2px solid #f16059;
+  border-radius: 50%;
+  height: 13rem;
+  padding: 5px;
+}
+
+.nav-details {
+  height: 13rem;
+  margin: 1rem;
+}
+
+.nav-heading {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.nav-text {
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+}
+
+.nav-text:hover {
+  color: #f16059;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  margin: 0 1rem;
+}
+
+.social-icons a:hover {
+  color: #f16059;
+}
 
 /********************************
 SKILLS
 ********************************/
+.card {
+  border: 1px solid #39464840;
+  border-radius: 30px;
+  padding: 3rem;
+}
+
+.skill-icon {
+  color: #f1605970;
+  font-size: 5rem;
+}
+
+.card-header-title {
+  font-size: 1.5rem;
+}
+
+.card .card-content .content ul {
+  list-style: none;
+}
+
+.content table td {
+  border: none;
+}
 
 /********************************
 RECENT WORK
 ********************************/
+.recent-projects {
+  background-image: linear-gradient(to right bottom, #8ed8e670, #8ed8e6);
+  border: none;
+  height: 14rem;
+}
+
+.recent-projects:hover {
+  background-image: linear-gradient(to right bottom, #8ed8e670, #8ed8e6);
+  border: none;
+  height: 14rem;
+}
 
 /********************************
 TESTIMONIALS
 ********************************/
+.quote {
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.testimonals-credit {
+  line-height: 2rem;
+}
+
+.author {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.testimonials-picture {
+  border-radius: 50%;
+  width: 6rem;
+}
 
 /********************************
 FOOTER
 ********************************/
+#go-to-top-btn {
+  bottom: 3rem;
+  color: #f16059;
+  display: none;
+  font-size: 3rem;
+  position: fixed;
+  right: 4rem;
+  text-decoration: none;
+  z-index: 500;
+}
+
+#go-to-top-btn:hover {
+  color: #ff827b;
+}
+
+.footer {
+  background-color: #394648;
+  border-top: 4px solid #ff827b;
+  color: #ffffff;
+  padding-bottom: 3rem;
+}
+
 .footer a {
+  color: #ffffff;
   font-size: 2rem;
   margin-right: 1rem;
 }
+
 .footer a:hover {
-  color: #ffffff;
+  color: #f16059;
 }
+
 .copyright {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
+
+.bulma {
+  height: 1.5rem;
+}
+
+.icons-ref {
+  font-size: 0.75rem;
+}
+
+#icons8-link {
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-right: 0;
+}
+
 
 /********************************
 PROJECTS
 ********************************/
+
+
+/********************************
+ANIMATIONS
+********************************/
+@keyframes moveInLeft {
+
+  /* for good browser performance only animate two properties */
+  /* starting point */
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+    /* moves on x-achsis, so only specify x*/
+  }
+
+  /* animation ends at */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    /* end at original position */
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

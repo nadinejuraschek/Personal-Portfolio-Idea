@@ -12,6 +12,7 @@
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
 
     <!-- RESET -->
     <link rel="stylesheet" href="assets/css/reset.css" />
@@ -20,6 +21,32 @@
   </head>
   <body>
     <!-- NAVIGATION -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation main-nav">
+  <div class="navbar-brand">
+    <div class="nav-item">
+      <a href="index.html"><img src="assets/images_icons/logo_black.svg" alt="logo" class="nav-logo"></a>
+    </div>
+  </div>
+
+  <div class="navbar-menu">
+      <div class="navbar-item">
+        <a class="mailto" href="mailto:nadine.jura@online.de"><i class="far fa-envelope"></i></a>
+      </div>
+      <div class="navbar-item">
+        <a href="http://linkedin.com/in/nadine-juraschek-3403b0175"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="navbar-item">
+        <a href="https://github.com/nadinejuraschek"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="navbar-item">
+        <a href="#"><i class="fab fa-angellist"></i></a>
+        </div>
+      <div class="navbar-item">
+        <a href="#"><i class="fab fa-stack-overflow"></i></a>
+      </div>
+    </div>
+</nav>
+    <img src="assets/images_icons/logo_black.svg" alt="logo" class="nav-logo">
     <div class="navigation">
       <input type="checkbox" class="nav-checkbox" id="nav-toggle" />
 
@@ -29,116 +56,233 @@
       </label>
 
       <div class="nav-background"></div>
-      <div class="navigation-nav container columns is-vcentered">
-        <div class="column">
-          <div class="languages">
+      <div class="navigation-nav container is-vcentered">
+        <div class="languages">
             <a class="language-link eng" href="#"><img class="language-img" src="assets/images_icons/eng02.png" alt="ENG"></a>
             <a class="language-link ger" href="#"><img class="language-img" src="assets/images_icons/german.png" alt="GER"></a>
           </div>
-        <div class="nav-contact">
-          <img
-            class="profile-pic"
-            src="assets/images_icons/IMG_5540.JPG"
-            alt="Profile Picture"
-          />
-          <div class="nav-details">
-          <h4 class="nav-heading">Contact Details</h4>
-          <a class="nav-text"><i class="far fa-envelope"></i>nadine.jura@online.de</a><br>
-          <a class="nav-text"><i class="fas fa-phone"></i>+1 (408) 643-4840</a>
-          <div class="social-icons">
-            <a href="http://linkedin.com/in/nadine-juraschek-3403b0175"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/nadinejuraschek"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-angellist"></i></a>
-            <a href="#"><i class="fab fa-stack-overflow"></i></a>
-          </div>
-          </div>
-        </div>
-        </div>
-
-        <div class="column">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">CV</a>
           </li>
           <li class="nav-item">
             <a href="projects.html" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#" class="nav-link">Playground</a>
           </li>
         </ul>
-        </div>
     </div>
 
     <!-- HEADER -->
     <header class="hero is-medium has-text-centered">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">Medium title</h1>
-          <h2 class="subtitle">Medium subtitle</h2>
+          <h1 class="heading-primary">
+            <span class="heading-primary-main">Nadine Juraschek</span>
+            <span class="heading-primary-sub">Full-Stack Developer</span>
+          </h1> <!-- h1 is important for search engines: job title and name need to be in h1 -->
+          <img
+            class="profile-pic"
+            src="assets/images_icons/IMG_5540.JPG"
+            alt="Profile Picture"
+          />
         </div>
       </div>
-
-    <!-- ABOUT -->
-    <section class="section about">
-      <div class="container">
-        <h1 class="title">About Me</h1>
-          <h2 class="subtitle">A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-          </h2>
-        </div>
-      </section>
     </header>
 
+    <hr>
+    <!-- ABOUT -->
+    <section class="section about has-text-centered">
+      <div class="container">
+        <h1 class="title">Hi, I'm Nadine. Nice to meet you!</h1>
+        <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing. Id aliquet risus feugiat in ante metus dictum at tempor. Eget felis eget nunc lobortis. Rhoncus dolor purus non enim praesent elementum facilisis leo. Leo urna molestie at elementum eu. Id donec ultrices tincidunt arcu. Vitae aliquet nec ullamcorper sit amet. Varius vel pharetra vel turpis. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Convallis aenean et tortor at risus. Urna duis convallis convallis tellus.</h2>
+      </div>
+    </section>
+
+    <hr>
     <!-- SKILLS -->
     <section class="section skills has-text-centered">
       <div class="container">
         <h1 class="title">Skills</h1>
         <div class="columns">
           <div class="column">
-
+            <div class="card">
+              <div class="skill-icon">
+                <img src="assets/images_icons/icons8-source-code-96.png">
+              </div>
+              <div class="card-header-title is-centered">
+                Front-End
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <table>
+                    <tr>
+                      <td>HTML</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>CSS</td>
+                      <td>Bootstrap</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Semantic UI</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Bulma</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Materialize</td>
+                    </tr>
+                    <tr>
+                      <td>JavaScript</td>
+                      <td>jQuery</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>APIs</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="column">
-            
+            <div class="card">
+              <div class="skill-icon">
+                <img src="assets/images_icons/icons8-server-96.png">
+              </div>
+              <div class="card-header-title is-centered">
+                Back-End
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <table class="table">
+                    <tr>
+                      <td>JavaScript</td>
+                      <td>Node.js</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Express.js</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="column">
-            
+            <div class="card">
+              <div class="skill-icon">
+                <img src="assets/images_icons/icons8-workflow-96.png">
+              </div>
+              <div class="card-header-title is-centered">
+                Other Tools
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <table>
+                    <tr>
+                      <td>Git</td>
+                    </tr>
+                    <tr>
+                      <td>GitHub</td>
+                    </tr>
+                    <tr>
+                      <td>Terminal</td>
+                    </tr>
+                    <tr>
+                      <td>Visual Studio Code</td>
+                    </tr>
+                    <tr>
+                      <td>Atom</td>
+                    </tr>
+                    <tr>
+                      <td>Slack</td>
+                    </tr>
+                    <tr>
+                      <td>Codepen</td>
+                    </tr>
+                    <tr>
+                      <td>Codeply</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <hr>
     <!-- RECENT WORK -->
     <section class="section recent-work has-text-centered">
       <div class="container">
         <h1 class="title">Recent Work</h1>
-        <h2 class="subtitle">A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-        </h2>
+        <div class="columns">
+          <div class="column">
+            <div class="card recent-projects">
+              <div class="card-content">
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card recent-projects">
+              <div class="card-content">
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card recent-projects">
+              <div class="card-content">
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <hr>
     <!-- TESTIMONIALS -->
     <section class="section testimonials has-text-centered">
       <div class="container">
         <h1 class="title">Testimonials</h1>
-        <h2 class="subtitle">A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+        <h2 class="quote">"A simple container to divide your page into, like the one you're currently reading."
         </h2>
+        <p class="testimonals-credit"><span class="author">Person One</span><br><span class="position">Job Title at Company</span></p>
+        <img class="testimonials-picture" src="assets/images_icons/placeholder_150.png" alt="Testimonials Picture">
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <a id="go-to-top-btn" href="#"><i class="fas fa-chevron-circle-up"></i></a>
+
+    <div class="footer">
       <div class="content has-text-centered">
-        <p class="social-icons-footer">
-          <a href="http://linkedin.com/in/nadine-juraschek-3403b0175"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/nadinejuraschek"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-angellist"></i></a>
-          <a href="#"><i class="fab fa-stack-overflow"></i></a>
-        </p>
       <p class="copyright">® 2019 Nadine Juraschek</p>
+      <p class="icons-ref">Icons by <a id="icons8-link" href="https://icons8.com/">icons8</a>.</p>
+      <a href="https://bulma.io/"><img class="bulma" src="assets/images_icons/made-with-bulma--white.png" alt="Made with Bulma"></a>
     </div>
-    </footer>
+    </div>
 
     <!-- FONTAWESOME -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
