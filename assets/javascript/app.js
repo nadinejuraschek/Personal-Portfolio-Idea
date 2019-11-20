@@ -25,9 +25,6 @@ $(document).ready(function () {
         e = e || window.event; // for IE
         e.preventDefault();
 
-        // launch a new window with your PDF
-        window.open(path, 'somename', ... /* options */);
-
         // redirect current page to new location
         window.location = redirect;
     }
