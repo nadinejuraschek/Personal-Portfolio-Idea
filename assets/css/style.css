@@ -376,7 +376,7 @@ RECENT WORK
   justify-content: center;
   padding: 0 3rem;
   color: #ffffff;
-  z-index: 1
+  z-index: 1;
 }
 
 .projects .project-grid figure figcaption p {
@@ -384,6 +384,7 @@ RECENT WORK
   font-size: 1.15rem;
   line-height: 1.5rem;
   font-weight: 400;
+  padding-top: 1.25rem;
 }
 
 .projects .project-grid figure figcaption a.button.is-primary.is-outlined.is-rounded {
