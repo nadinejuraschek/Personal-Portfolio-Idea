@@ -10,6 +10,7 @@ COLORS
 
 FONTS
 Lato
+Satisfy
 ********************************/
 body,
 a {
@@ -498,6 +499,14 @@ FOOTER
   border-top: 4px solid #ff827b;
   color: #ffffff;
   padding-bottom: 3rem;
+}
+
+.footer .title {
+  color: #ffffff;
+  letter-spacing: 0.15rem;
+  font-family: "Satisfy", cursive;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 .footer a {
