@@ -556,6 +556,35 @@ PROJECTS
 }
 
 /********************************
+PLAYGROUND
+********************************/
+.train-scheduler a.button.is-primary.is-outlined.is-rounded,
+.false-friends-trivia a.button.is-primary.is-outlined.is-rounded,
+.crystals-collector a.button.is-primary.is-outlined.is-rounded {
+  border: 2px solid #8ed8e6;
+  color: #8ed8e6;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-right: 1rem;
+  padding: 1.2rem;
+}
+
+.train-scheduler a.button.is-primary.is-outlined.is-rounded:hover,
+.false-friends-trivia a.button.is-primary.is-outlined.is-rounded:hover,
+.crystals-collector a.button.is-primary.is-outlined.is-rounded:hover {
+  background-color: #8ed8e6;
+  color: #254E70;
+}
+
+.train-scheduler a.button.is-primary.is-outlined.is-rounded .icon,
+.false-friends-trivia a.button.is-primary.is-outlined.is-rounded .icon,
+.crystals-collector a.button.is-primary.is-outlined.is-rounded .icon {
+  margin-left: 0.1rem;
+  margin-right: 0.5rem;
+  width: 1.25rem;
+}
+
+/********************************
 ANIMATIONS
 ********************************/
 @keyframes moveInLeft {
