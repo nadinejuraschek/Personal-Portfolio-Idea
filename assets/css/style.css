@@ -105,12 +105,12 @@ NAVIGATION
 }
 
 /* makes background of menu appear */
-.nav-checkbox:checked~.nav-background {
+.nav-checkbox:checked ~ .nav-background {
   transform: scale(80);
 }
 
 /* lets menu items be visible */
-.nav-checkbox:checked~.navigation-nav {
+.nav-checkbox:checked ~ .navigation-nav {
   opacity: 1;
   width: 100%;
 }
@@ -167,12 +167,13 @@ NAVIGATION
 /** FUNCTIONALITY **/
 .nav-link:link,
 .nav-link:visited {
-  background-image: linear-gradient(120deg,
-      transparent 0%,
-      transparent 50%,
-      #f16059 50%);
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    #f16059 50%
+  );
   background-size: 250%;
-  ;
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
@@ -223,16 +224,16 @@ NAVIGATION
   right: 3.1rem;
 }
 
-.nav-checkbox:checked+.nav-btn .nav-icon {
+.nav-checkbox:checked + .nav-btn .nav-icon {
   background-color: transparent;
 }
 
-.nav-checkbox:checked+.nav-btn .nav-icon::before {
+.nav-checkbox:checked + .nav-btn .nav-icon::before {
   top: 0;
   transform: rotate(135deg);
 }
 
-.nav-checkbox:checked+.nav-btn .nav-icon::after {
+.nav-checkbox:checked + .nav-btn .nav-icon::after {
   top: 0;
   transform: rotate(-135deg);
 }
@@ -241,7 +242,8 @@ NAVIGATION
 HEADER
 ********************************/
 header {
-  background-image: linear-gradient(#ffffff99, #ffffff99), url(../images_icons/workspace_02.jpg);
+  background-image: linear-gradient(#ffffff99, #ffffff99),
+    url(../images_icons/workspace_02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -336,7 +338,12 @@ SKILLS
 
 .skill-icon {
   color: #f1605970;
-  font-size: 5rem;
+  font-size: 2rem;
+}
+
+img {
+  height: 6rem;
+  margin-bottom: 1rem;
 }
 
 .card-header-title {
@@ -367,8 +374,8 @@ RECENT WORK
 .projects .project-grid figure img.project-preview {
   -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .projects .project-grid figure figcaption {
@@ -392,7 +399,11 @@ RECENT WORK
   margin: 1.5rem auto;
 }
 
-.projects .project-grid figure figcaption a.button.is-primary.is-outlined.is-rounded {
+.projects
+  .project-grid
+  figure
+  figcaption
+  a.button.is-primary.is-outlined.is-rounded {
   border: 2px solid #8ed8e6;
   color: #ffffff;
   font-size: 1rem;
@@ -401,19 +412,28 @@ RECENT WORK
   padding: 1.2rem;
 }
 
-.projects .project-grid figure figcaption a.button.is-primary.is-outlined.is-rounded:hover {
+.projects
+  .project-grid
+  figure
+  figcaption
+  a.button.is-primary.is-outlined.is-rounded:hover {
   background-color: #8ed8e6;
-  color: #254E70;
+  color: #254e70;
 }
 
-.projects .project-grid figure figcaption a.button.is-primary.is-outlined.is-rounded .icon {
+.projects
+  .project-grid
+  figure
+  figcaption
+  a.button.is-primary.is-outlined.is-rounded
+  .icon {
   margin-left: 0.1rem;
   margin-right: 0.5rem;
   width: 1.25rem;
 }
 
 .projects .project-grid .overlay {
-  background-color: #254E70;
+  background-color: #254e70;
 }
 
 .projects .project-grid .overlay,
@@ -424,18 +444,18 @@ RECENT WORK
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: .45s ease-in-out;
-  transition: .45s ease-in-out
+  -webkit-transition: 0.45s ease-in-out;
+  transition: 0.45s ease-in-out;
 }
 
 .projects .project-grid figure:hover img {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 .projects .project-grid figure:hover .overlay,
 .projects .project-grid figure:hover figcaption {
-  opacity: 1
+  opacity: 1;
 }
 
 .click-here-p {
@@ -470,8 +490,8 @@ TESTIMONIALS
 
 .testimonials-picture {
   border-radius: 50%;
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, .1),
-    0 0 0 1px rgba(10, 10, 10, .02);
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
   margin-top: 2rem;
   width: 6rem;
 }
@@ -527,16 +547,6 @@ FOOTER
   height: 1.5rem;
 }
 
-.icons-ref {
-  font-size: 0.75rem;
-}
-
-#icons8-link {
-  font-size: 0.75rem;
-  font-weight: 800;
-  margin-right: 0;
-}
-
 /********************************
 PROJECTS
 ********************************/
@@ -573,7 +583,7 @@ PLAYGROUND
 .false-friends-trivia a.button.is-primary.is-outlined.is-rounded:hover,
 .crystals-collector a.button.is-primary.is-outlined.is-rounded:hover {
   background-color: #8ed8e6;
-  color: #254E70;
+  color: #254e70;
 }
 
 .train-scheduler a.button.is-primary.is-outlined.is-rounded .icon,
@@ -588,7 +598,6 @@ PLAYGROUND
 ANIMATIONS
 ********************************/
 @keyframes moveInLeft {
-
   /* for good browser performance only animate two properties */
   /* starting point */
   0% {
@@ -623,10 +632,10 @@ RESPONSIVENESS
 
 @media screen and (min-width: 769px) {
   .projects .project-grid {
-    padding-top: 4rem
+    padding-top: 4rem;
   }
 
   .projects .project-grid figure figcaption {
-    padding: 0rem 2rem
+    padding: 0rem 2rem;
   }
 }
