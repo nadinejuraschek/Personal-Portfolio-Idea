@@ -589,6 +589,7 @@ PROJECTS
   padding: 2rem;
 }
 .is-primary {
+  margin-left: 0.5rem;
   width: 9rem;
 }
 .tech-heading {
@@ -608,6 +609,11 @@ PROJECTS
 .recreo-font {
   font-family: "Cabin Sketch", "Arial", sans-serif;
   font-size: 2.5rem;
+}
+.github-btn-sm,
+  .website-btn-sm {
+  width: 2rem;
+  margin-left: 0.5rem;
 }
 
 /********************************
