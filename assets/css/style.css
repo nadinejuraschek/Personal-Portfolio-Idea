@@ -565,6 +565,51 @@ PROJECTS
   line-height: 1.4rem;
 }
 
+.navbar-pusher {
+  height: 2.5rem;
+}
+
+.project-section {
+  line-height: 1.5rem;
+}
+.col-img {
+  padding: 4rem;
+}
+.col-description {
+  padding: 3rem;
+}
+.bg-dark {
+  background-color: #394648;
+  color: #ffffff;
+}
+.project-preview-screen {
+  height: 12rem;
+}
+.project-redirect {
+  padding: 2rem;
+}
+.is-primary {
+  width: 9rem;
+}
+.tech-heading {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+.project-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.moodsphere-font {
+  font-family: "Fira Sans", "Arial", sans-serif;
+}
+.teacherspet-font {
+  font-family: "Quicksand", "Arial", sans-serif;
+}
+.recreo-font {
+  font-family: "Cabin Sketch", "Arial", sans-serif;
+  font-size: 2.5rem;
+}
+
 /********************************
 PLAYGROUND
 ********************************/

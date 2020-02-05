@@ -19,7 +19,7 @@
 
     <!-- GOOGLE FONTS -->
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,900|Satisfy&display=swap"
+      href="https://fonts.googleapis.com/css?family=Lato:400,900|Satisfy|Cabin+Sketch:700|Fira+Sans:700|Quicksand&display=swap"
       rel="stylesheet"
     />
 
@@ -57,7 +57,7 @@
         <a href="https://stackoverflow.com/users/12017081/nadinejuraschek"><i class="fab fa-stack-overflow"></i></a>
       </div>
     </div>
-</nav>
+    </nav>
     <img src="assets/images_icons/logo_black.svg" alt="Nadine Juraschek | Full-Stack Developer" class="nav-logo">
     <div class="navigation">
       <input type="checkbox" class="nav-checkbox" id="nav-toggle" />
@@ -94,106 +94,152 @@
         </ul>
     </div>
 
-    <!-- HEADER -->
-    <header class="hero is-medium has-text-centered">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="heading-primary">
-            <span class="heading-primary-main">Nadine Juraschek</span>
-            <span class="heading-primary-sub">Projects</span>
-          </h1>
-        </div>
-      </div>
-    </header>
-
     <!-- PROJECTS -->
-    <section class="section skills has-text-centered">
-      <div class="container">
-        <div class="columns">
-          <section class="column is-half-tablet is-one-third-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="assets/images_icons/moodsphere.png" alt="Moodsphere">
-                </figure>
-              </div>
-            <div class="card-content">
-              <p class="content">
-                Moodsphere is a web application that lets users log and track their current mental or emotional state. Furthermore, helpful resources, such as videos, playlists, and articles for coping with anxiety, stress, etc. can be found in a discover section.
+    <div class="navbar-pusher">
+
+    </div>
+    <div class="project-section">
+      <div class="columns">
+        <div class="column is-4-desktop has-text-centered col-img">
+          <img class="project-preview-screen" src="assets/images_icons/moodsphere_desktop.png" alt="">
+        </div>
+        <div class="column is-8-desktop has-text-centered col-description">
+          <div class="columns">
+            <div class="column is-6-desktop has-text-centered">
+              <h4 class="project-heading moodsphere-font">Moodsphere</h4>
+              <p>
+                Moodsphere is a web application that lets users log and
+                track their current emotional state. Helpful resources (such as videos, playlists, and emergency hotlines) for coping with anxiety, stress, etc. can be found in a discover section.
               </p>
-            </div>
-          </section>
-          <section class="column is-half-tablet is-one-third-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
+              <div class="project-redirect">
+                <a
+                  class="button is-primary is-outlined is-rounded"
+                  href="https://github.com/nadinejuraschek/Moodsphere"
+                  target="_blank"
+                  >
+                  <i class="fab fa-github icon"></i>
+                  <span> GitHub</span>
+                </a>
+                <!-- <a
+                  class="button is-primary is-outlined is-rounded"
+                  href="#"
+                  target="_blank"
+                  >
+                  <i class="far fa-window-maximize icon"></i>
+                  <span> Website</span>
+                </a> -->
               </div>
-            <div class="card-content">
-              <p class="content">
-                Coming Soon
-              </p>
             </div>
-          </section>
-          <section class="column is-half-tablet is-one-third-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-              </div>
-            <div class="card-content">
-              <p class="content">
-                Coming Soon
-              </p>
+            <div class="column is-6-desktop has-text-centered">
+              <h4 class="tech-heading">Technologies</h4>
+              <ul>
+                <li class="tech-item">Semantic UI</li>
+                <li class="tech-item">JavaScript, jQuery</li>
+                <li class="tech-item">Node.js</li>
+                <li class="tech-item">EJS</li>
+                <li class="tech-item">Express, Passport, Moment.js, Slider.js</li>
+                <li class="tech-item">mongoDB</li>
+              </ul>
             </div>
-          </section>
           </div>
-        <div class="columns">
-          <section class="column is-half-tablet is-one-third-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-              </div>
-            <div class="card-content">
-              <p class="content">
-                Coming Soon
-              </p>
-            </div>
-          </section>
-          <section class="column is-half-tablet is-one-third-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-              </div>
-            <div class="card-content">
-              <p class="content">
-                Coming Soon
-              </p>
-            </div>
-          </section>
-          <section class="column is-half-tablet is-one-third-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-              </div>
-            <div class="card-content">
-              <p class="content">
-                Coming Soon
-              </p>
-            </div>
-          </section>
         </div>
       </div>
-    </section>
+    </div>
 
+    <div class="project-section bg-dark">
+      <div class="columns">
+        <div class="column is-8-desktop has-text-centered col-description">
+          <div class="columns">
+            <div class="column is-6-desktop has-text-centered">
+              <h4 class="project-heading recreo-font">RECREO</h4>
+              <p>
+                Find your next playtime location by browsing playgrounds and parks in your area and finding helpful information about their equipment and amenities. Users can add playgrounds, images, ratings and comments.
+              </p>
+              <div class="project-redirect">
+                <a
+                  class="button is-primary is-outlined is-rounded"
+                  href="https://github.com/nadinejuraschek/recreo"
+                  target="_blank"
+                  >
+                  <i class="fab fa-github icon"></i>
+                  <span> GitHub</span>
+                </a>
+                <!-- <a
+                  class="button is-primary is-outlined is-rounded"
+                  href="#"
+                  target="_blank"
+                  >
+                  <i class="far fa-window-maximize icon"></i>
+                  <span> Website</span>
+                </a> -->
+              </div>
+            </div>
+            <div class="column is-6-desktop has-text-centered">
+              <h4 class="tech-heading">Technologies</h4>
+              <ul>
+                <li class="tech-item">Bootstrap</li>
+                <li class="tech-item">JavaScript</li>
+                <li class="tech-item">Node.js</li>
+                <li class="tech-item">EJS</li>
+                <li class="tech-item">Express, Passport</li>
+                <li class="tech-item">mongoDB</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4-desktop has-text-centered col-img">
+          <img class="project-preview-screen" src="assets/images_icons/recreo_desktop.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <div class="columns">
+        <div class="column is-4-desktop has-text-centered col-img">
+          <img class="project-preview-screen" src="assets/images_icons/teachersPET_desktop.png" alt="">
+        </div>
+        <div class="column is-8-desktop has-text-centered col-description">
+          <div class="columns">
+            <div class="column is-6-desktop has-text-centered">
+              <h4 class="project-heading teacherspet-font">teachersPET</h4>
+              <p>
+                A Class Management Tool for all educators. Individual student data, assignments, and lesson plans can be added, deleted, and displayed for each class. Built with Node.js, jQuery, EJS, Sequelize, and Bootstrap.
+              </p>
+              <div class="project-redirect">
+                <a
+                  class="button is-primary is-outlined is-rounded"
+                  href="https://github.com/nadinejuraschek/teachersPET"
+                  target="_blank"
+                  >
+                  <i class="fab fa-github icon"></i>
+                  <span> GitHub</span>
+                </a>
+                <a
+                  class="button is-primary is-outlined is-rounded"
+                  href="https://teacherspet-plan-educate-track.herokuapp.com/"
+                  target="_blank"
+                  >
+                  <i class="far fa-window-maximize icon"></i>
+                  <span> Website</span>
+                </a>
+              </div>
+            </div>
+            <div class="column is-6-desktop has-text-centered">
+              <h4 class="tech-heading">Technologies</h4>
+              <ul>
+                <li class="tech-item">Bootstrap</li>
+                <li class="tech-item">JavaScript, jQuery</li>
+                <li class="tech-item">Node.js</li>
+                <li class="tech-item">EJS</li>
+                <li class="tech-item">Express, JSON Web Tokens</li>
+                <li class="tech-item">mySQL, Sequelize</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- FOOTER -->
     <a id="go-to-top-btn" href="#"><i class="fas fa-chevron-circle-up"></i></a>
 
