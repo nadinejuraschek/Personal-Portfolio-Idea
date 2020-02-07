@@ -573,7 +573,7 @@ PROJECTS
   line-height: 1.5rem;
 }
 .col-img {
-  padding: 4rem;
+  padding: 5rem;
 }
 .col-description {
   padding: 3rem;
@@ -598,6 +598,7 @@ PROJECTS
 }
 .project-heading {
   font-size: 2rem;
+  line-height: 2.5rem;
   margin-bottom: 2rem;
 }
 .moodsphere-font {
