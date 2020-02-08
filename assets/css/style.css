@@ -238,6 +238,11 @@ NAVIGATION
   transform: rotate(-135deg);
 }
 
+.icon-space {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
 /********************************
 HEADER
 ********************************/
@@ -325,6 +330,10 @@ ABOUT
 
 .social-icons a:hover {
   color: #f16059;
+}
+
+.social-links {
+  margin-top: 5rem;
 }
 
 /********************************
