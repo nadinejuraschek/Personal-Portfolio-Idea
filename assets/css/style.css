@@ -572,10 +572,7 @@ PROJECTS
 .project-section {
   line-height: 1.5rem;
 }
-.col-img {
-  padding: 5rem;
-}
-.col-description {
+.col-pad {
   padding: 3rem;
 }
 .bg-dark {
@@ -591,10 +588,6 @@ PROJECTS
 .is-primary {
   margin-left: 0.5rem;
   width: 9rem;
-}
-.tech-heading {
-  font-size: 1.25rem;
-  margin: 1rem 0;
 }
 .project-heading {
   font-size: 2rem;
