@@ -659,12 +659,21 @@ ANIMATIONS
 RESPONSIVENESS
 ********************************/
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .projects .project-grid {
     padding-top: 4rem;
   }
 
   .projects .project-grid figure figcaption {
     padding: 0rem 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .heading-primary-main {
+    font-size: 2rem;
+  }
+  .heading-primary-sub {
+    font-size: 1.5rem;
   }
 }

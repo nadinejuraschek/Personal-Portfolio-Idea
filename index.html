@@ -48,46 +48,8 @@
           /></a>
         </div>
       </div>
-
-      <div class="navbar-menu">
-        <div class="navbar-item">
-          <a class="mailto" href="mailto:nadine.jura@online.de"
-            ><i class="far fa-envelope"></i
-          ></a>
-        </div>
-        <div class="navbar-item">
-          <a class="call" href="tel:+14086434840"
-            ><i class="fas fa-phone"></i
-          ></a>
-        </div>
-        <div class="navbar-item">
-          <a href="http://linkedin.com/in/nadine-juraschek-3403b0175"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
-        <div class="navbar-item">
-          <a href="https://github.com/nadinejuraschek"
-            ><i class="fab fa-github"></i
-          ></a>
-        </div>
-        <div class="navbar-item">
-          <a href="https://angel.co/nadine-juraschek"
-            ><i class="fab fa-angellist"></i
-          ></a>
-        </div>
-        <div class="navbar-item">
-          <a href="https://stackoverflow.com/users/12017081/nadinejuraschek"
-            ><i class="fab fa-stack-overflow"></i
-          ></a>
-        </div>
-      </div>
     </nav>
 
-    <img
-      src="assets/images_icons/logo_black.svg"
-      alt="Nadine Juraschek | Full-Stack Developer"
-      class="nav-logo"
-    />
     <div class="navigation">
       <input type="checkbox" class="nav-checkbox" id="nav-toggle" />
       <label for="nav-toggle" class="nav-btn">
@@ -151,7 +113,7 @@
     </div>
 
     <!-- HEADER -->
-    <header class="hero is-medium has-text-centered">
+    <header class="hero is-large has-text-centered">
       <div class="hero-body">
         <div class="container">
           <h1 class="heading-primary">
@@ -166,23 +128,32 @@
     <!-- ABOUT -->
     <section class="section about has-text-centered">
       <div class="container">
-        <h1 class="title">Hi, I'm Nadine. Nice to meet you!</h1>
-        <img
-          class="profile-pic"
-          src="assets/images_icons/IMG_5540.JPG"
-          alt="Profile Picture"
-        />
-        <h2 class="subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis
-          at erat pellentesque adipiscing. Id aliquet risus feugiat in ante
-          metus dictum at tempor. Eget felis eget nunc lobortis. Rhoncus dolor
-          purus non enim praesent elementum facilisis leo. Leo urna molestie at
-          elementum eu. Id donec ultrices tincidunt arcu. Vitae aliquet nec
-          ullamcorper sit amet. Varius vel pharetra vel turpis. Cursus mattis
-          molestie a iaculis at erat pellentesque adipiscing commodo. Convallis
-          aenean et tortor at risus. Urna duis convallis convallis tellus.
-        </h2>
+        <div class="columns is-vcentered is-multiline">
+          <div class="column is-full-mobile is-half-tablet mobile-margin">
+            <div class="profile-pic-wrapper">
+                <img
+                  class="profile-pic"
+                  src="assets/images_icons/IMG_5540.JPG"
+                  alt="Profile Picture"
+                />
+            </div>
+          </div>
+          <div class="column is-full-mobile is-half-tablet">
+            <h2 class="title left-aligned">
+              <span>Hi, I'm Nadine.</span>
+              <br>
+              <span>Nice to meet you!</span>
+            </h2>
+          </div>
+          <div class="column">
+            <p class="subtitle mobile-padding">
+              I am a decisive action-taker, versatile problem-solver, and motivated team-worker with a background in Childhood Education and Teaching. My greatest passion is connecting my education skills with modern technology to create applicable, practical, and progressive applications.
+              <br>
+              <br>
+              Starting in May 2020, I am open for a full-time opportunity that will further my Web Development skills and possibly integrate my experience and skills in Education and Childhood Development. 
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -190,7 +161,7 @@
     <!-- SKILLS -->
     <section class="section skills has-text-centered">
       <div class="container">
-        <h1 class="title">Skills</h1>
+        <h2 class="title">Technical Skills</h2>
         <div class="columns">
           <div class="column">
             <div class="card">
@@ -220,16 +191,16 @@
                       <td>Bulma</td>
                     </tr>
                     <tr>
-                      <td></td>
-                      <td>Materialize</td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td>Tailwind</td>
-                    </tr>
-                    <tr>
                       <td>JavaScript</td>
                       <td>jQuery</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>React</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Redux</td>
                     </tr>
                     <tr>
                       <td></td>
@@ -266,6 +237,10 @@
                     <tr>
                       <td>mySQL</td>
                       <td>Workbench</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Sequelize</td>
                     </tr>
                     <tr>
                       <td>mongoDB</td>
@@ -313,9 +288,6 @@
                     <tr>
                       <td>Codepen</td>
                     </tr>
-                    <tr>
-                      <td>Codeply</td>
-                    </tr>
                   </table>
                 </div>
               </div>
@@ -329,7 +301,7 @@
     <!-- RECENT WORK -->
     <section class="section projects has-text-centered">
       <div class="container">
-        <h1 class="title">Recent Projects</h1>
+        <h2 class="title">Recent Projects</h2>
         <div class="project-grid">
           <div class="columns is-multiline is-mobile">
             <div
@@ -411,7 +383,7 @@
                     </a>
                     <a
                       class="button is-primary is-outlined is-rounded"
-                      href="#"
+                      href="https://recreo-findaplayground.herokuapp.com/"
                       target="_blank"
                       ><i class="far fa-window-maximize icon"></i>Website
                     </a>
@@ -433,15 +405,15 @@
       </div>
     </section>
 
-    <hr />
+    <!-- <hr /> -->
     <!-- TESTIMONIALS -->
-    <section class="section testimonials has-text-centered">
+    <!-- <section class="section testimonials has-text-centered">
       <div class="container">
-        <h1 class="title">Testimonials</h1>
-        <h2 class="quote">
+        <h2 class="title">Testimonials</h2>
+        <p class="quote">
           "A simple container to divide your page into, like the one you're
           currently reading."
-        </h2>
+        </p>
         <p class="testimonals-credit">
           <span class="author">Person One</span><br /><span class="position"
             >Job Title at Company</span
@@ -453,14 +425,34 @@
           alt="Testimonials Picture"
         />
       </div>
-    </section>
+    </section> -->
 
     <!-- FOOTER -->
     <a id="go-to-top-btn" href="#"><i class="fas fa-chevron-circle-up"></i></a>
 
     <div class="footer">
       <div class="content has-text-centered">
-        <h1 class="title">Let's work together!</h1>
+        <h2 class="title">Let's work together!</h2>
+        <div class="footer-links">
+            <a class="mailto" href="mailto:nadine.jura@online.de"
+              ><i class="far fa-envelope"></i
+            ></a>
+            <a class="call" href="tel:+14086434840"
+              ><i class="fas fa-phone"></i
+            ></a>
+            <a href="http://linkedin.com/in/nadine-juraschek-3403b0175"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://github.com/nadinejuraschek"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://angel.co/nadine-juraschek"
+              ><i class="fab fa-angellist"></i
+            ></a>
+            <a href="https://stackoverflow.com/users/12017081/nadinejuraschek"
+              ><i class="fab fa-stack-overflow"></i
+            ></a>
+        </div>
         <p class="copyright">® 2020 Nadine Juraschek</p>
         <a href="https://bulma.io/"
           ><img
