@@ -28,4 +28,12 @@ $(document).ready(function () {
         // redirect current page to new location
         window.location = redirect;
     }
+
+    /********************************
+    DISPLAY OR HIDE PLAYGROUNDS
+    ********************************/
+    $('#show-playground').on('click', function(event) {
+        event.preventDefault();
+        $('#playground').toggleClass('hide');
+    });
 });

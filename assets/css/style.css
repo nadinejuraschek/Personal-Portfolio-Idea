@@ -31,6 +31,10 @@ hr {
   width: 80%;
 }
 
+.hide {
+  display: none;
+}
+
 /********************************
 NAVIGATION
 ********************************/
@@ -472,6 +476,17 @@ RECENT WORK
 
 .click-here-link:hover {
   color: #f16059;
+}
+
+#show-playground {
+  background-color: #f16059;
+  border-radius: 50%;
+  border: none;
+  color: #ffffff;
+  font-size: 1.75rem;
+  height: 3rem;
+  margin: 2rem auto;
+  width: 3rem;
 }
 
 /********************************
