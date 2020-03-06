@@ -35,8 +35,7 @@ hr {
 NAVIGATION
 ********************************/
 .navbar {
-  background-color: #fafafa;
-  border-bottom: 2.5px solid #f1605950;
+  background-color: #ffffff90;
   height: 5.3rem;
 }
 
@@ -51,7 +50,7 @@ NAVIGATION
 /** LOGO **/
 .nav-logo {
   height: 3rem;
-  margin: 0 2rem;
+  margin: 0 1rem;
   text-align: center;
 }
 
@@ -61,23 +60,23 @@ NAVIGATION
 }
 
 .eng {
-  right: 12.2rem;
-  top: 4.75rem;
+  right: 6.75rem;
+  top: 3rem;
 }
 
 .ger {
-  right: 10rem;
-  top: 4.75rem;
+  right: 4.5rem;
+  top: 3rem;
 }
 
 .eng:hover {
-  right: 12.3rem;
-  top: 4.65rem;
+  right: 6.9rem;
+  top: 2.8rem;
 }
 
 .ger:hover {
-  right: 10.1rem;
-  top: 4.65rem;
+  right: 4.7rem;
+  top: 2.8rem;
 }
 
 .language-img {
@@ -85,15 +84,15 @@ NAVIGATION
   width: 2rem;
 }
 
-/* nav-background: round button hidden behind the menu button, expans when clicked */
+/* nav-background: round button hidden behind the menu button, expands when clicked */
 .nav-background {
   background: radial-gradient(#606e70, #394648);
   border-radius: 50%;
-  height: 4rem;
+  height: 1rem;
   position: fixed;
-  right: 3.5rem;
-  top: 3.5rem;
-  width: 4rem;
+  right: 2rem;
+  top: 2rem;
+  width: 1rem;
   z-index: 100;
 
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -106,7 +105,7 @@ NAVIGATION
 
 /* makes background of menu appear */
 .nav-checkbox:checked ~ .nav-background {
-  transform: scale(80);
+  transform: scale(250);
 }
 
 /* lets menu items be visible */
@@ -116,16 +115,15 @@ NAVIGATION
 }
 
 .nav-btn {
-  background-color: #ffffff;
-  border: 2.5px solid #f1605950;
+  background-color: #f16059;
   border-radius: 50%;
   box-shadow: 0 1rem 3rem #00000010;
-  height: 5.5rem;
+  height: 3rem;
   position: fixed;
-  right: 3rem;
+  right: 1rem;
   text-align: center;
-  top: 2.25rem;
-  width: 5.5rem;
+  top: 1rem;
+  width: 3rem;
   z-index: 300;
 
   cursor: pointer;
@@ -191,24 +189,24 @@ NAVIGATION
 
 /** ICON **/
 .nav-icon {
-  background-color: #394648;
+  background-color: #fafafa;
   display: inline-block;
-  height: 1.5px;
+  height: 1.25px;
   position: relative;
-  margin-top: 2.65rem;
-  width: 2rem;
+  margin-top: 1.5rem;
+  width: 1.25rem;
 }
 
 .nav-icon::before,
 .nav-icon::after {
-  background-color: #394648;
+  background-color: #ffffff;
   content: "";
   display: inline-block;
-  height: 1.5px;
+  height: 1px;
   left: 0;
   position: absolute;
   transition: all 0.2s;
-  width: 2rem;
+  width: 1.25rem;
 }
 
 .nav-icon::before {
@@ -220,8 +218,8 @@ NAVIGATION
 }
 
 .nav-btn:hover {
-  top: 2.1rem;
-  right: 3.1rem;
+  top: 0.8rem;
+  right: 1.1rem;
 }
 
 .nav-checkbox:checked + .nav-btn .nav-icon {
@@ -252,27 +250,18 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  margin-top: 5.3rem;
 }
 
 .heading-primary {
   line-height: 6rem;
-  margin: 4rem;
-
-  backface-visibility: hidden;
-  /* stops animation from being "shaky", hides whatever is behind the moving element */
+  margin: auto;
 }
 
 .heading-primary-main {
   display: block;
   font-family: "Satisfy", cursive;
   font-size: 5.4rem;
-
-  animation-name: moveInLeft;
-  /* which animation? */
-  animation-duration: 2s;
-  /* how long? */
-  animation-timing-function: ease-out;
-  /* starts fast, ends slower */
 }
 
 .heading-primary-sub {
@@ -280,10 +269,6 @@ header {
   font-size: 2rem;
   letter-spacing: 1.5rem;
   text-transform: uppercase;
-
-  animation-name: moveInRight;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
 }
 
 /********************************
@@ -294,11 +279,20 @@ ABOUT
   display: inline-block;
 }
 
+.profile-pic-wrapper {
+  text-align: right;
+  margin-right: 1rem;
+}
+
 .profile-pic {
   border: 2px solid #f16059;
   border-radius: 50%;
   height: 13rem;
   padding: 5px;
+}
+
+.left-aligned {
+  text-align: left;
 }
 
 .nav-details {
@@ -477,7 +471,7 @@ RECENT WORK
 }
 
 .click-here-link:hover {
-  color: #8ed8e6;
+  color: #f16059;
 }
 
 /********************************
@@ -514,7 +508,7 @@ FOOTER
   display: none;
   font-size: 3rem;
   position: fixed;
-  right: 4rem;
+  right: 1rem;
   text-decoration: none;
   z-index: 500;
 }
@@ -535,7 +529,6 @@ FOOTER
   letter-spacing: 0.15rem;
   font-family: "Satisfy", cursive;
   font-size: 3rem;
-  margin-bottom: 3rem;
 }
 
 .footer a {
@@ -546,6 +539,14 @@ FOOTER
 
 .footer a:hover {
   color: #f16059;
+}
+
+.footer-links {
+  margin: 3rem;
+}
+
+.footer-links a {
+  margin-left: 1rem;
 }
 
 .copyright {
@@ -658,6 +659,25 @@ ANIMATIONS
 /********************************
 RESPONSIVENESS
 ********************************/
+@media screen and (min-width: 980px) {
+  .heading-primary {
+    backface-visibility: hidden;
+    /* stops animation from being "shaky", hides whatever is behind the moving element */
+  }
+  .heading-primary-main {
+    animation-name: moveInLeft;
+    /* which animation? */
+    animation-duration: 2s;
+    /* how long? */
+    animation-timing-function: ease-out;
+    /* starts fast, ends slower */
+  }
+  .heading-primary-sub {
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .projects .project-grid {
@@ -670,10 +690,26 @@ RESPONSIVENESS
 }
 
 @media screen and (max-width: 640px) {
-  .heading-primary-main {
-    font-size: 2rem;
+  .profile-pic-wrapper {
+    text-align: center;
+    margin: auto;
   }
+
+  .left-aligned {
+    text-align: center;
+  }
+
+  .heading-primary-main {
+    font-size: 2.5rem;
+  }
+
   .heading-primary-sub {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.25rem;
+    line-height: 1.5rem;
+  }
+
+  .mobile-padding {
+    padding: 0.5rem 1rem;
   }
 }
