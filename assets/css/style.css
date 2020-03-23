@@ -254,7 +254,18 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  height: 80vh;
   margin-top: 5.3rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.block {
+  margin: auto;
+  width: 90%;
 }
 
 .heading-primary {
@@ -694,7 +705,16 @@ RESPONSIVENESS
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 895px) {
+  .profile-pic-wrapper {
+    text-align: center;
+    margin: auto;
+  }
+
+  .left-aligned {
+    text-align: center;
+  }
+
   .projects .project-grid {
     padding-top: 4rem;
   }
@@ -705,6 +725,10 @@ RESPONSIVENESS
 }
 
 @media screen and (max-width: 640px) {
+  header {
+    background-position: bottom right;
+  }
+  
   .profile-pic-wrapper {
     text-align: center;
     margin: auto;
@@ -715,7 +739,8 @@ RESPONSIVENESS
   }
 
   .heading-primary-main {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
   }
 
   .heading-primary-sub {
