@@ -427,7 +427,8 @@ RECENT WORK
   font-size: 1rem;
   font-weight: 400;
   margin-right: 1rem;
-  padding: 1.2rem;
+  padding: 1rem;
+  width: 8rem;
 }
 
 .projects
@@ -498,6 +499,18 @@ RECENT WORK
   height: 3rem;
   margin: 2rem auto;
   width: 3rem;
+}
+
+.is-blue {
+  background-color: transparent;
+  border-color:#8ed8e6;
+  color: #8ed8e6;
+}
+
+.is-blue:hover {
+  background-color: #8ed8e6;
+  border-color:#8ed8e6;
+  color: #254e70;
 }
 
 /********************************

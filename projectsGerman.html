@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Nadine Juraschek - Projekte</title>
+    <title>Nadine Juraschek | Projekte</title>
 
     <!-- FAVICON -->
     <link
@@ -29,39 +29,27 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!-- NAVIGATION -->
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation main-nav">
-  <div class="navbar-brand">
-    <div class="nav-item">
-      <a href="indexGerman.html"><img src="assets/images_icons/logo_black.svg" alt="logo" class="nav-logo"></a>
-    </div>
-  </div>
 
-  <div class="navbar-menu">
-      <div class="navbar-item">
-        <a class="mailto" href="mailto:nadine.jura@online.de"><i class="far fa-envelope"></i></a>
-      </div>
-      <div class="navbar-item">
-        <a class="call" href="tel:+14086434840"><i class="fas fa-phone"></i></a>
-      </div>
-      <div class="navbar-item">
-        <a href="http://linkedin.com/in/nadine-juraschek-3403b0175"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      <div class="navbar-item">
-        <a href="https://github.com/nadinejuraschek"><i class="fab fa-github"></i></a>
-      </div>
-      <div class="navbar-item">
-        <a href="https://angel.co/nadine-juraschek"><i class="fab fa-angellist"></i></a>
+    <!-- NAVIGATION -->
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation main-nav"
+    >
+      <div class="navbar-brand">
+        <div class="nav-item">
+          <a href="indexGerman.html"
+            ><img
+              src="assets/images_icons/logo_black.svg"
+              alt="logo"
+              class="nav-logo"
+          /></a>
         </div>
-      <div class="navbar-item">
-        <a href="https://stackoverflow.com/users/12017081/nadinejuraschek"><i class="fab fa-stack-overflow"></i></a>
       </div>
-    </div>
-</nav>
-    <img src="assets/images_icons/logo_black.svg" alt="Nadine Juraschek | Full-Stack Developer" class="nav-logo">
+    </nav>
+
     <div class="navigation">
       <input type="checkbox" class="nav-checkbox" id="nav-toggle" />
-
       <label for="nav-toggle" class="nav-btn">
         <div class=""></div>
         <span class="nav-icon"></span>
@@ -70,31 +58,41 @@
       <div class="nav-background"></div>
       <div class="navigation-nav container is-vcentered">
         <div class="languages">
-            <a class="language-link eng" href="projects.html"><img class="language-img" src="assets/images_icons/eng02.png" alt="ENG"></a>
-            <a class="language-link ger" href="projectsGerman.html"><img class="language-img" src="assets/images_icons/german.png" alt="GER"></a>
-          </div>
+          <a class="language-link eng" href="projects.html"
+            ><img
+              class="language-img"
+              src="assets/images_icons/eng02.png"
+              alt="ENG"
+          /></a>
+          <a class="language-link ger" href="projectsGerman.html"
+            ><img
+              class="language-img"
+              src="assets/images_icons/german.png"
+              alt="GER"
+          /></a>
+        </div>
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="indexGerman.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
             <a
-              href="assets/CVGerman.pdf"
-              onclick="openPdf(event, 'assets/CVGerman.pdf', 'cv.html');"
+              href="assets/CV.pdf"
+              onclick="openPdf(event, 'assets/CV.pdf', 'cv.html');"
               class="nav-link"
               >Lebenslauf
             </a>
           </li>
           <li class="nav-item">
-            <a href="projectsGerman.html" class="nav-link">Projekte</a>
+            <a href="projects.html" class="nav-link">Projekte</a>
           </li>
           <li class="nav-item social-links">
             <a class="mailto icon-space" href="mailto:nadine.jura@online.de"
               ><i class="far fa-envelope"></i
             ></a>
-            <a class="call icon-space" href="tel:+14086434840"
+            <!-- <a class="call icon-space" href="tel:+14086434840"
               ><i class="fas fa-phone"></i
-            ></a>
+            ></a> -->
             <a class="icon-space" href="http://linkedin.com/in/nadine-juraschek-3403b0175"
               ><i class="fab fa-linkedin-in"></i
             ></a>
@@ -109,6 +107,7 @@
             ></a>
           </li>
         </ul>
+      </div>
     </div>
 
     <!-- PROJECTS -->
@@ -125,17 +124,18 @@
         <div class="column is-half-tablet is-one-third-desktop has-text-centered">
           <h4 class="project-heading moodsphere-font">Moodsphere</h4>
           <p>
-            Moodsphere is a web application that lets users log and track their current emotional state. Helpful resources (such as videos, playlists, and emergency hotlines) for coping with anxiety, stress, etc. can be found in a discover section.
+            Moodsphere ist eine Web Applikation mit deren Hilfe Benutzer ihren mentalen Zustand eintragen und somit über längere Zeit verfolgen können. Zudem sind hilfreiche Resourcen, wie
+            Musik, Videos oder Fachartikel für den Umgang mit Stress, Angst, u.ä., sowie auch Notfalltelefonnummern zu finden.
           </p>
           <div class="project-redirect">
-            <a class="button is-primary is-outlined is-rounded" href="https://github.com/nadinejuraschek/Moodsphere" target="_blank">
+            <a class="button is-blue is-rounded" href="https://github.com/nadinejuraschek/Moodsphere" target="_blank">
               <i class="fab fa-github icon"></i>
               <span> GitHub</span>
             </a>
-            <!-- <a class="button is-primary is-outlined is-rounded" href="#" target="_blank">
-              <i class="far fa-window-maximize icon"></i>
-              <span> Website</span>
-            </a> -->
+            <a class="button is-blue is-rounded" href="#" target="_blank" disabled>
+              <!-- <i class="far fa-window-maximize icon"></i> -->
+              <span>In Entwicklung</span>
+            </a>
           </div>
         </div>
         <div class="column is-half-tablet is-one-third-desktop has-text-centered">
@@ -145,7 +145,7 @@
             <li>Node.js</li>
             <li>EJS</li>
             <li>Express, Passport, Moment.js, Slider.js</li>
-            <li>mongoDB</li>
+            <li>MongoDB</li>
           </ul>
         </div>
       </div>
@@ -156,23 +156,24 @@
         <div class="column is-half-tablet is-one-third-desktop has-text-centered">
           <h4 class="project-heading recreo-font">RECREO</h4>
           <p>
-            Find your next playtime location by browsing playgrounds and parks in your area and finding helpful information about their equipment and amenities. Users can add playgrounds, images, ratings and comments.
+            Finde den besten Ort für dein nächstes Spieltreffen beim Stöbern durch Spielplätze und Parks in deiner Nähe und entdecke hilfreiche Informationen über deren Ausstattung. Registrierte Benutzer können selbst Spielorte, Bilder, Bewertungen und Kommentare hinterlassen.
           </p>
           <div class="project-redirect">
             <a
-              class="button is-primary is-outlined is-rounded"
+              class="button is-blue is-rounded"
               href="https://github.com/nadinejuraschek/recreo"
               target="_blank">
               <i class="fab fa-github icon"></i>
               <span> GitHub</span>
             </a>
-            <!-- <a
-              class="button is-primary is-outlined is-rounded"
+            <a
+              class="button is-blue is-rounded"
               href="#"
-              target="_blank">
-              <i class="far fa-window-maximize icon"></i>
-              <span> Website</span>
-            </a> -->
+              target="_blank"
+              disabled>
+              <!-- <i class="far fa-window-maximize icon"></i> -->
+              <span>In Entwicklung</span>
+            </a>
           </div>
         </div>
         <div class="column is-half-tablet is-one-third-desktop has-text-centered">
@@ -182,7 +183,7 @@
             <li>Node.js</li>
             <li>EJS</li>
             <li>Express, Passport</li>
-            <li>mongoDB</li>
+            <li>MongoDB</li>
           </ul>
         </div>
         <div class="column is-full-tablet is-one-third-desktop has-text-centered">
@@ -203,22 +204,22 @@
         <div class="column is-half-tablet is-one-third-desktop has-text-centered">
           <h4 class="project-heading teacherspet-font">teachersPET</h4>
           <p>
-            A Class Management Tool for all educators. Individual student data, assignments, and lesson plans can be added, deleted, and displayed for each class.
+            Eine Klassenzimmer-Management Applikation für alle Art von Lehrern und Pädagogen. Indiviuelle Schülerdaten, Hausarbeiten oder Hausaufgaben, Unterrichtsentwürfe und Notizen für unterschiedliche Klassen können hinzugefügt, entfernt und angezeigt werden.
+            Entwickelt mit Node.js, jQuery, EJS, Sequelize, und Bootstrap.
           </p>
           <div class="project-redirect">
             <a
-              class="button is-primary is-outlined is-rounded"
+              class="button is-blue is-rounded"
               href="https://github.com/nadinejuraschek/teachersPET"
               target="_blank">
               <i class="fab fa-github icon"></i>
               <span> GitHub</span>
             </a>
             <a
-              class="button is-primary is-outlined is-rounded"
+              class="button is-blue is-rounded"
               href="https://teacherspet-plan-educate-track.herokuapp.com/"
               target="_blank">
-              <i class="far fa-window-maximize icon"></i>
-              <span> Website</span>
+              <span> Webseite</span>
             </a>
           </div>
         </div>
@@ -228,14 +229,66 @@
             <li>JavaScript, jQuery</li>
             <li>Node.js</li>
             <li>EJS</li>
-            <li>Express, JSON Web Tokens</li>
-            <li>mySQL, Sequelize</li>
+            <li>Express, JSON Web Token</li>
+            <li>MySQL, Sequelize</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="project-section playground-grid">
+    <div class="project-section bg-dark">
+      <div class="columns is-multiline is-vcentered col-pad">
+        <div class="column is-half-tablet is-one-third-desktop has-text-centered">
+          <h4 class="project-heading recreo-font">On Par</h4>
+          <p>
+            Eine Web Applikation, die Au Pairs Arbeitsstunden, Gehaltschecks, persönliche Ziele und Notizen verfolgen, erstellen und speichern lässt. Zusätzlich können Notfallrufnummern, Gastfamilieninformationen, Tips für Aktivitäten mit den Gastkindern und mehr gefunden werden.
+          </p>
+          <div class="project-redirect">
+            <a
+              class="button is-blue is-rounded"
+              href="https://github.com/nadinejuraschek/APIA_Project"
+              target="_blank">
+              <i class="fab fa-github icon"></i>
+              <span> GitHub</span>
+            </a>
+            <a
+              class="button is-blue is-rounded"
+              href="#"
+              target="_blank"
+              disabled>
+              <!-- <i class="far fa-window-maximize icon"></i> -->
+              <span>In Entwicklung</span>
+            </a>
+          </div>
+        </div>
+        <div class="column is-half-tablet is-one-third-desktop has-text-centered">
+          <ul>
+            <li>Semantic UI</li>
+            <li>React.js</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Express, JSON Web Token</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="column is-full-tablet is-one-third-desktop has-text-centered">
+          <figure class="image is-400x216">
+            <img class="project-preview-screen" src="assets/images_icons/onpar_desktop.png" alt="On Par Preview Screen">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLAYGROUND -->
+    <div class="columns is-vcentered has-text-centered">
+      <div class="column">
+        <button id="show-playground" class="click-here-link">
+          <i class="fas fa-ellipsis-h"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="playground" class="project-section playground-grid hide">
       <div class="columns is-multiline is-vcentered">
 
         <div class="column col-pad is-full-mobile is-half-tablet is-one-third-desktop has-text-centered bg-change">
@@ -245,17 +298,11 @@
             </p> -->
             <div class="project-redirect">
               <a
-                class="button is-primary is-outlined is-rounded github-btn-sm"
+                class="button is-blue is-rounded github-btn-sm"
                 href="https://github.com/nadinejuraschek/LIRI-Bot"
                 target="_blank">
                 <i class="fab fa-github icon"></i>
               </a>
-              <!-- <a
-                class="button is-primary is-outlined is-rounded website-btn-sm"
-                href="#"
-                target="_blank">
-                <i class="far fa-window-maximize icon"></i>
-              </a> -->
             </div>
         </div>
 
@@ -266,13 +313,13 @@
             </p> -->
             <div class="project-redirect">
               <a
-                class="button is-primary is-outlined is-rounded github-btn-sm"
+                class="button is-blue is-rounded github-btn-sm"
                 href="https://github.com/nadinejuraschek/StudyBuddy"
                 target="_blank">
                 <i class="fab fa-github icon"></i>
               </a>
               <!-- <a
-                class="button is-primary is-outlined is-rounded"
+                class="button is-blue is-rounded"
                 href="#"
                 target="_blank">
                 <i class="far fa-window-maximize icon"></i>
@@ -287,13 +334,13 @@
             </p> -->
             <div class="project-redirect">
               <a
-                class="button is-primary is-outlined is-rounded github-btn-sm"
+                class="button is-blue is-rounded github-btn-sm"
                 href="https://github.com/nadinejuraschek/Simon-Game"
                 target="_blank">
                 <i class="fab fa-github icon"></i>
               </a>
               <a
-                class="button is-primary is-outlined is-rounded website-btn-sm"
+                class="button is-blue is-rounded website-btn-sm"
                 href="https://nadinejuraschek.github.io/Simon-Game/"
                 target="_blank">
                 <i class="far fa-window-maximize icon"></i>
@@ -302,19 +349,19 @@
         </div>
 
         <div class="column col-pad is-full-mobile is-half-tablet is-one-third-desktop has-text-centered bg-change">
-            <h5 class="project-heading">Travel Easy - Node.js Store</h5>
+            <h5 class="project-heading">Travel Easy</h5>
             <!-- <p>
               An Amazon-like fictional storefront built with Node.js and mySQL selling travel equipment and accessories.
             </p> -->
             <div class="project-redirect">
               <a
-                class="button is-primary is-outlined is-rounded github-btn-sm"
+                class="button is-blue is-rounded github-btn-sm"
                 href="https://github.com/nadinejuraschek/Travel-Easy---Node.js-Store"
                 target="_blank">
                 <i class="fab fa-github icon"></i>
               </a>
               <!-- <a
-                class="button is-primary is-outlined is-rounded website-btn-sm"
+                class="button is-blue is-rounded website-btn-sm"
                 href="https://nadinejuraschek.github.io/Train-Scheduler/"
                 target="_blank">
                 <i class="far fa-window-maximize icon"></i>
@@ -329,13 +376,13 @@
             </p> -->
             <div class="project-redirect">
               <a
-                class="button is-primary is-outlined is-rounded github-btn-sm"
+                class="button is-blue is-rounded github-btn-sm"
                 href="https://github.com/nadinejuraschek/The-Happy-Bean"
                 target="_blank">
                 <i class="fab fa-github icon"></i>
               </a>
               <!-- <a
-                class="button is-primary is-outlined is-rounded website-btn-sm"
+                class="button is-blue is-rounded website-btn-sm"
                 href="https://nadinejuraschek.github.io/Train-Scheduler/"
                 target="_blank">
                 <i class="far fa-window-maximize icon"></i>
@@ -350,13 +397,13 @@
             </p> -->
             <div class="project-redirect">
               <a
-                class="button is-primary is-outlined is-rounded github-btn-sm"
+                class="button is-blue is-rounded github-btn-sm"
                 href="https://github.com/nadinejuraschek/Train-Scheduler"
                 target="_blank">
                 <i class="fab fa-github icon"></i>
               </a>
               <a
-                class="button is-primary is-outlined is-rounded website-btn-sm"
+                class="button is-blue is-rounded website-btn-sm"
                 href="https://nadinejuraschek.github.io/Train-Scheduler/"
                 target="_blank">
                 <i class="far fa-window-maximize icon"></i>
@@ -371,13 +418,13 @@
             </p> -->
             <div class="project-redirect">
               <a
-                class="button is-primary is-outlined is-rounded github-btn-sm"
+                class="button is-blue is-rounded github-btn-sm"
                 href="https://github.com/nadinejuraschek/Newsletter-Signup"
                 target="_blank">
                 <i class="fab fa-github icon"></i>
               </a>
               <!-- <a
-                class="button is-primary is-outlined is-rounded website-btn-sm"
+                class="button is-blue is-rounded website-btn-sm"
                 href="https://nadinejuraschek.github.io/German-False-Friends-Trivia/"
                 target="_blank">
                 <i class="far fa-window-maximize icon"></i>
@@ -392,13 +439,13 @@
             </p> -->
             <div class="project-redirect">
               <a
-                class="button is-primary is-outlined is-rounded github-btn-sm"
+                class="button is-blue is-rounded github-btn-sm"
                 href="https://github.com/nadinejuraschek/Bid-Win-Save"
                 target="_blank">
                 <i class="fab fa-github icon"></i>
               </a>
               <!-- <a
-                class="button is-primary is-outlined is-rounded website-btn-sm"
+                class="button is-blue is-rounded website-btn-sm"
                 href="https://nadinejuraschek.github.io/Train-Scheduler/"
                 target="_blank">
                 <i class="far fa-window-maximize icon"></i>
@@ -413,13 +460,13 @@
             </p> -->
             <div class="project-redirect">
               <a
-                class="button is-primary is-outlined is-rounded github-btn-sm"
+                class="button is-blue is-rounded github-btn-sm"
                 href="https://github.com/nadinejuraschek/German-False-Friends-Trivia"
                 target="_blank">
                 <i class="fab fa-github icon"></i>
               </a>
               <a
-                class="button is-primary is-outlined is-rounded website-btn-sm"
+                class="button is-blue is-rounded website-btn-sm"
                 href="https://nadinejuraschek.github.io/German-False-Friends-Trivia/"
                 target="_blank">
                 <i class="far fa-window-maximize icon"></i>
@@ -434,13 +481,13 @@
             </p> -->
             <div class="project-redirect">
               <a
-                class="button is-primary is-outlined is-rounded github-btn-sm"
+                class="button is-blue is-rounded github-btn-sm"
                 href="https://github.com/nadinejuraschek/Crystals-Collector-Game"
                 target="_blank">
                 <i class="fab fa-github icon"></i>
               </a>
               <a
-                class="button is-primary is-outlined is-rounded website-btn-sm"
+                class="button is-blue is-rounded website-btn-sm"
                 href="https://nadinejuraschek.github.io/Crystals-Collector-Game/"
                 target="_blank">
                 <i class="far fa-window-maximize icon"></i>
@@ -449,19 +496,19 @@
         </div>
 
         <div class="column col-pad is-full-mobile is-half-tablet is-one-third-desktop has-text-centered bg-change">
-            <h5 class="project-heading">NewScraper</h5>
+            <h5 class="project-heading">NewsScraper</h5>
             <!-- <p>
               text text text text text text text text text text text text text text text text text text
             </p> -->
             <div class="project-redirect">
               <a
-                class="button is-primary is-outlined is-rounded github-btn-sm"
+                class="button is-blue is-rounded github-btn-sm"
                 href="https://github.com/nadinejuraschek/NewsScraper"
                 target="_blank">
                 <i class="fab fa-github icon"></i>
               </a>
               <!-- <a
-                class="button is-primary is-outlined is-rounded website-btn-sm"
+                class="button is-blue is-rounded website-btn-sm"
                 href="https://nadinejuraschek.github.io/Crystals-Collector-Game/"
                 target="_blank">
                 <i class="far fa-window-maximize icon"></i>
@@ -471,13 +518,33 @@
 
       </div>
     </div>
-
+    
     <!-- FOOTER -->
     <a id="go-to-top-btn" href="#"><i class="fas fa-chevron-circle-up"></i></a>
 
     <div class="footer">
       <div class="content has-text-centered">
-        <h1 class="title">Let's work together!</h1>
+        <h2 class="title">Lass uns zusammen arbeiten!</h2>
+        <div class="footer-links">
+            <a class="mailto" href="mailto:nadine.jura@online.de"
+              ><i class="far fa-envelope"></i
+            ></a>
+            <!-- <a class="call" href="tel:+14086434840"
+              ><i class="fas fa-phone"></i
+            ></a> -->
+            <a href="http://linkedin.com/in/nadine-juraschek-3403b0175"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://github.com/nadinejuraschek"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://angel.co/nadine-juraschek"
+              ><i class="fab fa-angellist"></i
+            ></a>
+            <a href="https://stackoverflow.com/users/12017081/nadinejuraschek"
+              ><i class="fab fa-stack-overflow"></i
+            ></a>
+        </div>
         <p class="copyright">® 2020 Nadine Juraschek</p>
         <a href="https://bulma.io/"
           ><img
