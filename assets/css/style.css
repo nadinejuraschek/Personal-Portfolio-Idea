@@ -354,6 +354,10 @@ SKILLS
   padding: 3rem;
 }
 
+.tech-card {
+  height: 34rem;
+}
+
 .skill-icon {
   color: #f1605970;
   font-size: 2rem;
@@ -652,6 +656,10 @@ PROJECTS
 }
 .recreo-font {
   font-family: "Cabin Sketch", "Arial", sans-serif;
+  font-size: 2.5rem;
+}
+.onpar-font {
+  font-family: "Oleo Script Swash Caps", "Arial", sans-serif;
   font-size: 2.5rem;
 }
 .github-btn-sm,
