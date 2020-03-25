@@ -777,4 +777,20 @@ RESPONSIVENESS
   .mobile-padding {
     padding: 0.5rem 1rem;
   }
+
+  .projects .project-grid figure figcaption p {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .projects
+    .project-grid
+    figure
+    figcaption
+    a.button.is-primary.is-outlined.is-rounded {
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+    width: 6rem;
+  }
 }
