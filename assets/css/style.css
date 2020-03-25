@@ -166,6 +166,10 @@ NAVIGATION
   color: #fafafa;
 }
 
+.nav-item.social-links a:hover {
+  color: #f16059;
+}
+
 /** FUNCTIONALITY **/
 .nav-link:link,
 .nav-link:visited {
