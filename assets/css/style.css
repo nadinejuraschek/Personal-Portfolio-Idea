@@ -637,6 +637,10 @@ PROJECTS
     background-color: #394648;
     color: #ffffff;
 }
+.bg-light,
+  .bg-change:nth-child(odd) {
+  color: #394648;
+}
 .project-preview-screen {
   height: 12rem;
 }
@@ -674,6 +678,12 @@ PROJECTS
 .playground-grid {
   margin-bottom: 12px;
 }
+/* .light-text {
+  color: #ffffff;
+}
+.dark-text {
+  color: #394648;
+} */
 
 /********************************
 ANIMATIONS
