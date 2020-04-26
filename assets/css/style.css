@@ -1030,7 +1030,7 @@ RESPONSIVENESS
     transform: none;
   }
 
-  .carousel-pips ul {
-    margin: 1rem 0 1rem 0;
+  .carousel-pips {
+    margin-top: 1rem;
   }
 }
