@@ -998,7 +998,7 @@ RESPONSIVENESS
   }
 
   .carousel-container {
-    height: 73vh;
+    height: 74.5vh;
     width: 88vw;
   }
 
@@ -1028,9 +1028,5 @@ RESPONSIVENESS
   .quote.next {
     display: none;
     transform: none;
-  }
-
-  .carousel-pips {
-    margin-top: 1rem;
   }
 }
