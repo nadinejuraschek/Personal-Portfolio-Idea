@@ -580,9 +580,9 @@ TESTIMONIALS
   list-style: none;
   opacity: 0;
 
-  position: absolute;
+  /* position: absolute;
       top: 50%;
-      left: 50%;
+      left: 50%; */
   width: 100%;
 
   transform: translate(calc(100% + 12rem), -50%) scale(0.6);
@@ -855,6 +855,23 @@ ANIMATIONS
   }
 }
 
+@keyframes alternateCarousel {
+  /* for good browser performance only animate two properties */
+  /* starting point */
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+    /* moves on x-achsis, so only specify x*/
+  }
+
+  /* animation ends at */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    /* end at original position */
+  }
+}
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -978,5 +995,38 @@ RESPONSIVENESS
     font-size: 0.75rem;
     margin-right: 0.5rem;
     width: 6rem;
+  }
+
+  .carousel-container {
+    height: 70vh;
+    width: 88vw;
+  }
+
+  .quote {
+    list-style: none;
+  
+    transform: none;
+    -webkit-transform: none;
+    transition: none;
+    -webkit-transition: none;
+  }
+
+  .quote.previous {
+    display: none;
+    transform: none;
+  }
+
+  .quote.current {
+    cursor: default;
+    opacity: 1;
+    transform: none;
+    animation-name: alternateCarousel;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  .quote.next {
+    display: none;
+    transform: none;
   }
 }
