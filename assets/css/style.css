@@ -20,7 +20,7 @@ Satisfy
 
 section {
   opacity: 0;
-  transition: opacity 1s 0.25s ease-out;
+  transition: opacity 1.2s 0.25s ease-out;
   will-change: opacity;
 }
 
@@ -304,6 +304,47 @@ header {
   font-size: 2rem;
   letter-spacing: 1.5rem;
   text-transform: uppercase;
+}
+
+.scroll-arrow {
+  color: #394648;
+  padding: 1rem;
+  text-align: center;
+  z-index: 10;
+}
+
+.scroll-arrow img {
+  height: 3rem;
+
+  -webkit-animation: fade-slide-up 1s 1s ease-out forwards;
+          animation: fade-slide-up 1s 1s ease-out forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 /********************************
