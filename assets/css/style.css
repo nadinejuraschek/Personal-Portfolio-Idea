@@ -18,6 +18,16 @@ Satisfy
       animation-play-state: paused !important;
 }
 
+section {
+  opacity: 0;
+  transition: opacity 1s 0.25s ease-out;
+  will-change: opacity;
+}
+
+section.is-visible {
+  opacity: 1;
+}
+
 body,
 a {
   color: #ffffff;

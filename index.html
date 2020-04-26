@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <title>Nadine Juraschek | Portfolio</title>
+  <title>Nadine Juraschek | Full-Stack Developer Portfolio</title>
 
   <!-- FAVICON -->
   <link
@@ -138,7 +138,7 @@
     </header>
 
     <!-- ABOUT -->
-    <section class="section about has-text-centered">
+    <section class="section about has-text-centered show-on-scroll">
       <div class="container">
         <div class="columns is-vcentered is-multiline">
           <div class="column is-full-mobile is-half-tablet mobile-margin">
@@ -171,7 +171,7 @@
 
     <hr />
     <!-- SKILLS -->
-    <section class="section skills has-text-centered">
+    <section class="section skills has-text-centered show-on-scroll">
       <div class="container">
         <h2 class="title">Technical Skills</h2>
         <div class="columns">
@@ -311,7 +311,7 @@
 
     <hr />
     <!-- RECENT WORK -->
-    <section class="section projects has-text-centered">
+    <section class="section projects has-text-centered show-on-scroll">
       <div class="container">
         <h2 class="title">Recent Projects</h2>
         <div class="project-grid">
@@ -419,7 +419,7 @@
 
     <!-- <hr /> -->
     <!-- TESTIMONIALS -->
-    <!-- <section class="section testimonials has-text-centered">
+    <!-- <section class="section testimonials has-text-centered show-on-scroll">
       <div class="container">
         <h2 class="title">Testimonials</h2>
         <p class="quote">
@@ -442,7 +442,7 @@
     <!-- FOOTER -->
     <a id="go-to-top-btn" href="#"><i class="fas fa-chevron-circle-up"></i></a>
 
-    <div class="footer">
+    <footer class="footer show-on-scroll">
       <div class="content has-text-centered">
         <h2 class="title">Let's work together!</h2>
         <div class="footer-links">
@@ -473,7 +473,7 @@
             alt="Made with Bulma"
         /></a>
       </div>
-    </div>
+    </footer>
 
     <!-- FONTAWESOME -->
     <script
@@ -483,6 +483,7 @@
 
     <!-- JAVASCRIPT -->
     <script>
+      // ensure animations wait before playing until content is fully loaded
       document.body.className += "js-loading";
 
       window.addEventListener("load", showPage, false);
