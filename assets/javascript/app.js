@@ -70,4 +70,10 @@ $(document).ready(function () {
         event.preventDefault();
         $('#playground').toggleClass('hide');
     });
+
+    /********************************
+    FOOTER YEAR
+    ********************************/
+    const currentYear = new Date().getFullYear();
+    $("#year").html(currentYear);
 });
