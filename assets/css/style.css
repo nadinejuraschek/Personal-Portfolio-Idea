@@ -42,6 +42,14 @@ a {
   padding: 3rem;
 }
 
+.subtitle a {
+  color: #f16059;
+}
+.subtitle a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 hr {
   margin: 0 auto;
   width: 80%;
@@ -390,7 +398,7 @@ SKILLS
 }
 
 .tech-card {
-  height: 34rem;
+  height: 40rem;
 }
 
 .skill-icon {
@@ -580,9 +588,9 @@ TESTIMONIALS
   list-style: none;
   opacity: 0;
 
-  /* position: absolute;
+  position: absolute;
       top: 50%;
-      left: 50%; */
+      left: 50%;
   width: 100%;
 
   transform: translate(calc(100% + 12rem), -50%) scale(0.6);
@@ -931,6 +939,10 @@ RESPONSIVENESS
     animation-duration: 2s;
     animation-timing-function: ease-out;
   }
+
+  .testimonials-desktop {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 895px) {
@@ -949,6 +961,10 @@ RESPONSIVENESS
 
   .projects .project-grid figure figcaption {
     padding: 0rem 2rem;
+  }
+
+  .testimonials-desktop {
+    display: none;
   }
 }
 
@@ -997,7 +1013,11 @@ RESPONSIVENESS
     width: 6rem;
   }
 
-  .carousel-container {
+  .testimonials-desktop {
+    display: none;
+  }
+
+  /* .carousel-container {
     height: 74.5vh;
     width: 88vw;
   }
@@ -1028,5 +1048,5 @@ RESPONSIVENESS
   .quote.next {
     display: none;
     transform: none;
-  }
+  } */
 }
