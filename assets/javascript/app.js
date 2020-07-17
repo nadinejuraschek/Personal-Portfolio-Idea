@@ -72,11 +72,6 @@ $(document).ready(function () {
     });
 
     /********************************
-    TESTIMONIALS CAROUSEL
-    ********************************/
-
-
-    /********************************
     FOOTER YEAR
     ********************************/
     const currentYear = new Date().getFullYear();

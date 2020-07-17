@@ -80,13 +80,13 @@
           <a class="language-link eng" href="index.html"
             ><img
               class="language-img"
-              src="assets/images_icons/eng02.png"
+              src="assets/images_icons/eng02.svg"
               alt="ENG"
           /></a>
           <a class="language-link ger" href="indexGerman.html"
             ><img
               class="language-img"
-              src="assets/images_icons/german.png"
+              src="assets/images_icons/german.svg"
               alt="GER"
           /></a>
         </div>
@@ -130,7 +130,7 @@
     </div>
 
     <!-- HEADER -->
-    <header class="hero is-large has-text-centered">
+    <header class="hero is-large has-text-centered" id="header">
         <div class="container wrapper">
           <div class="block">
             <h1 class="heading-primary">
@@ -153,11 +153,11 @@
         <div class="columns is-vcentered is-multiline">
           <div class="column is-full-mobile is-half-tablet mobile-margin">
             <div class="profile-pic-wrapper">
-                <img
-                  class="profile-pic"
-                  src="assets/images_icons/IMG_5540.JPG"
-                  alt="Profile Picture"
-                />
+              <picture>
+                <source srcset="./assets/images_icons/profile.webp" type="image/webp" />
+                <source srcset="./assets/images_icons/profile.png" type="image/png" />
+                <img class="profile-pic" src="./assets/images_icons/profile.png" alt="Profile Picture" />
+              </picture>
             </div>
           </div>
           <div class="column is-full-mobile is-half-tablet">
@@ -346,11 +346,11 @@
               class="column is-12-mobile is-half-tablet is-one-third-desktop"
             >
               <figure class="image is-3by2">
-                <img
-                  class="project-preview"
-                  src="assets/images_icons/moodsphere.png"
-                  alt="Moodsphere"
-                />
+                <picture>
+                  <source srcset="./assets/images_icons/moodsphere-index.webp" type="image/webp" />
+                  <source srcset="./assets/images_icons/moodsphere-index.png" type="image/png" />
+                  <img class="project-preview" src="./assets/images_icons/moodsphere-index.png" alt="Moodsphere" />
+                </picture>
                 <figcaption>
                   <p class="app-description">
                     Moodsphere is a web application that lets users log and
@@ -380,11 +380,11 @@
               class="column is-12-mobile is-half-tablet is-one-third-desktop"
             >
               <figure class="image is-3by2">
-                <img
-                  class="project-preview"
-                  src="assets/images_icons/teachersPET.png"
-                  alt="teachersPET"
-                />
+                <picture>
+                  <source srcset="./assets/images_icons/teachersPET-index.webp" type="image/webp" />
+                  <source srcset="./assets/images_icons/teachersPET-index.png" type="image/png" />
+                  <img class="project-preview" src="./assets/images_icons/teachersPET-index.png" alt="teachersPET" />
+                </picture>
                 <figcaption>
                   <p class="app-description">
                     A Class Management Tool for all educators. Individual student data, assignments, and lesson plans can be added, deleted, and displayed for each class. Built with Node.js, jQuery, EJS, Sequelize, and Bootstrap.
@@ -412,7 +412,11 @@
               class="column is-12-mobile is-half-tablet is-one-third-desktop"
             >
               <figure class="image is-3by2">
-                <img class="project-thumb" src="assets/images_icons/recreo.png" alt="recreo" />
+                <picture>
+                  <source srcset="./assets/images_icons/recreo-index.webp" type="image/webp" />
+                  <source srcset="./assets/images_icons/recreo-index.png" type="image/png" />
+                  <img class="project-preview" src="./assets/images_icons/recreo-index.png" alt="Recreo" />
+                </picture>
                 <figcaption>
                   <p class="app-description">
                     Find your next playtime location by browsing playgrounds and parks in your area and finding helpful information about their equipment and amenities. Users can add playgrounds, images, ratings, and comments.
@@ -478,7 +482,7 @@
         <a href="https://bulma.io/" rel="noopener" target="_blank"
           ><img
             class="bulma"
-            src="assets/images_icons/made-with-bulma--white.png"
+            src="assets/images_icons/made-with-bulma--white.svg"
             alt="Made with Bulma"
         /></a>
       </div>
