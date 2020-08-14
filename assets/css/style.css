@@ -63,7 +63,8 @@ hr {
 NAVIGATION
 ********************************/
 .navbar {
-  background-color: #ffffff90;
+  /* background-color: #ffffff90; */
+  background-color: #ffffff;
   height: 5.3rem;
 }
 
@@ -274,6 +275,36 @@ NAVIGATION
 }
 
 /********************************
+BANNER
+********************************/
+.banner {
+  background-color: #f16059;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 1rem 3rem;
+  position: absolute;
+  width: 100%;
+}
+
+.banner span {
+  font-weight: bold;
+}
+
+.banner-icon {
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.banner-icon img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+/********************************
 HEADER
 ********************************/
 header {
@@ -284,6 +315,7 @@ header {
   background-position: bottom;
   height: 80vh;
   margin-top: 5.3rem;
+  position: relative;
 }
 
 .wrapper {
@@ -911,6 +943,11 @@ RESPONSIVENESS
     font-size: 0.75rem;
     margin-right: 0.5rem;
     width: 6rem;
+  }
+
+  .banner {
+    padding: 1.5rem 3rem;
+    line-height: 1.25;
   }
 }
 

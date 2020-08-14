@@ -72,6 +72,14 @@ $(document).ready(function () {
     });
 
     /********************************
+    BANNER
+    ********************************/
+    $(".banner-icon").on("click", function(event) {
+        event.preventDefault();
+        $(".banner").addClass("hide");
+    });
+
+    /********************************
     FOOTER YEAR
     ********************************/
     const currentYear = new Date().getFullYear();
