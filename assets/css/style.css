@@ -754,19 +754,14 @@ PROJECTS
   line-height: 2.5rem;
   margin-bottom: 2rem;
 }
-.moodsphere-font {
-  font-family: "Fira Sans", "Arial", sans-serif;
+.project-title {
+  height: 40px;
+  margin-bottom: 2rem;
 }
-.teacherspet-font {
-  font-family: "Quicksand", "Arial", sans-serif;
-}
-.recreo-font {
-  font-family: "Cabin Sketch", "Arial", sans-serif;
-  font-size: 2.5rem;
-}
-.onpar-font {
-  font-family: "Oleo Script Swash Caps", "Arial", sans-serif;
-  font-size: 2.5rem;
+.project-title-img {
+  object-fit: contain !important;
+  height: 100% !important;
+  width: 100% !important;
 }
 .github-btn-sm,
   .website-btn-sm {
