@@ -778,6 +778,33 @@ PROJECTS
   color: #394648;
 } */
 
+.certificate {
+  background-color: #f1605960;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+  color: #394648;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 140px;
+  width: 100%;
+}
+
+.certificate img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.certificate span {
+  font-size: 1.25rem;
+}
+
 /********************************
 ANIMATIONS
 ********************************/
@@ -966,6 +993,25 @@ RESPONSIVENESS
   .project-preview-text img {
     height: auto;
     width: 40%;
+  }
+
+  .certificate {
+    background-color: #ffffff;
+    border: 1px solid #39464840;
+
+    flex-direction: row;
+
+    width: 400px;
+  }
+
+  .certificate:hover {
+    background-color: #f1605920;
+    border: 1px solid #f16059;
+  }
+
+  .certificate img {
+    margin-bottom: 0;
+    margin-right: 20px;
   }
 }
 

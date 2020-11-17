@@ -2,7 +2,7 @@ $(document).ready(function () {
     /********************************
     SCROLL ANIMATION
     ********************************/
-    const scroll =  window.requestAnimationFrame || 
+    const scroll =  window.requestAnimationFrame ||
                     function(callback) { window.setTimeout(callback, 1000/60) };
     const elementsToShow = document.querySelectorAll(".show-on-scroll");
 
@@ -36,7 +36,7 @@ $(document).ready(function () {
     /********************************
     GO TO TOP BUTTON
     ********************************/
-    /*Scroll to top when arrow up clicked */
+    /* Scroll to top when arrow up clicked */
     $(window).scroll(function () {
         var height = $(window).scrollTop();
         if (height > 100) {
