@@ -1,5 +1,5 @@
-# Current Personal Portfolio
-Visit [here](https://nadinejuraschek.com).
+# Legacy Personal Portfolio
+Visit [here](https://nadinejuraschek.github.io/webdevportfolio/).
 
 ## Technologies
 * JavaScript
